@@ -12,36 +12,53 @@ namespace homework
             //HomeWork
             //Console.WriteLine("Test Application");
 
-            //string ba = "Basic"; //Basic
+            
 
-            //string pr = "Pro";  //Pro
+            string text = "Pro"; //Expert
 
-            //string expert = "Expert"; //Expert
 
-            ExpertDocumentProgram document = new ExpertDocumentProgram();
-            ProDocumentProgram proDocument = new ProDocumentProgram();
+            if (text == "Basic")
+            {
             DocumentProgram basicDocument = new DocumentProgram();
-
 
             basicDocument.OpenDocument();
             basicDocument.EditDocument();
             basicDocument.SaveDocument();
 
-            //proDocument.OpenDocument();
-            //proDocument.EditDocument();
-            //proDocument.SaveDocument();
+            }
+            else if (text == "Pro")
+            {
+            ProDocumentProgram proDocument = new ProDocumentProgram();
 
 
-            //document.OpenDocument();
-            //document.EditDocument();
-            //document.SaveDocument();
-            
-            
-        
+            proDocument.OpenDocument();
+            proDocument.EditDocument();
+            proDocument.SaveDocument();
+            }
+            else if (text == "Expert")
+            {
+            ExpertDocumentProgram document = new ExpertDocumentProgram();
 
-           
 
-           
+
+            document.OpenDocument();
+            document.EditDocument();
+            document.SaveDocument();
+
+            }
+            else
+            {
+                Console.WriteLine(" 404 Not Fount ");
+            }
+
+
+
+
+
+
+
+
+
 
 
 
